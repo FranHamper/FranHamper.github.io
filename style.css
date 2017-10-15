@@ -1,0 +1,215 @@
+/*****************************
+CSS for The Dangling Modifier
+******************************/
+
+/* RESET STYLES */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 20px; list-style: decimal; }
+ul { padding-left: 20px; list-style: disc; }
+q:before, q:after { content:''; }
+/* END RESET */
+
+
+body {	
+	background: #ddd url("backgrounds/backgroundGradient.jpg");
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 15px;
+}
+
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	min-height:100%;
+	overflow: auto;
+	position: relative;
+	width: 1020px;
+}
+
+/* BANNER STYLES */
+
+h1 a {
+	text-decoration: none;
+	font-size: 72px;
+	font-family: Rochester, Garamond, serif;
+	color: #bb4466;
+	text-shadow: 0 0 1px #111;
+	padding-left: 10px; /*so font does not get cut off in IE*/
+}
+
+#banner {
+	border-bottom: 5px solid #333;
+}
+
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 1020px;
+	position: relative; /* so dangle positions relative to logo boundaries */
+}
+
+.dangle {
+	position: absolute;
+	left: -60px;
+	top: 65px;
+}
+	
+/* navLinks */
+	
+#navLinks {
+	border-top: 3px solid #ddd;
+	border-bottom: 3px solid #ddd;
+}
+
+#navLinks li {
+	list-style: none;
+	padding: 4px 0px;
+	padding-left: 5px;
+}
+
+#navLinks a {
+	text-decoration: none;
+	font-family: "Goudy Bookletter 1911", serif;
+	font-size: 26px;
+	font-weight: bold;
+	color: #601A2E;
+	text-shadow: 0 0 1px #333;
+}
+
+#navLinks a:hover {
+	color: #7A213A;
+	text-shadow: 0 0 1px #666;
+}
+#navigation {
+	float: right;
+	margin-top: 60px;
+	width: 200px;
+}
+
+#navigation img{
+	margin-top: -10px;
+}
+
+/* PAGE CONTENT HEADER */
+
+#pageHeader {
+	width: 775px;
+	overflow: auto;
+}
+
+h2 {
+	font-family: "Goudy Bookletter 1911", serif;
+	color: #8c334c;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 0 0 1px #555;	
+	float: right;
+	padding: 10px;
+}
+
+#pageHeader img.right {
+	float: right;
+}
+
+/* PAGE CONTENT */
+
+#content h3 {
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #eee;
+	border: 1px solid #aaa;
+	font-family: "Goudy Bookletter 1911", "Times New Roman", serif;
+	text-align: center;
+	margin: 15px 0;
+	padding: 5px 0;
+}
+
+.galleria-container {
+	background: #222;
+	-moz-box-shadow: 0 0 5px #666;
+	-webkit-box-shadow: 0 0 5px #666;
+	box-shadow: 0 0 5px #666;
+	margin-bottom: 100px;
+	margin-left: 75px;
+}
+
+#content {
+	background: #ddd;
+	border: 1px solid black;
+	box-shadow: 0 0 5px #666;
+	-moz-box-shadow: 0 0 5px #666;
+	-webkit-box-shadow: 0 0 5px #666;
+	overflow: auto;
+	width: 680px;
+	padding: 10px;
+	margin-left: 75px; /*leave space for dangle inside wrapper*/
+	margin-bottom: 100px; /*leave space for footer*/
+}
+
+#content p {
+	line-height: 1.5em;
+}
+
+#content p, #content li {
+	list-style: none;
+	padding: 10px 15px;
+}
+
+#content ul {
+	padding: 10px;
+	padding-top: 5px;
+}
+
+#content.formatText {
+	/*overrides font settings for #content*/
+	font-family: Times New Roman, serif;
+	font-size: 17px;
+}
+
+#content.padding {
+	/*overrides padding set for #content*/
+	padding: 10px;
+	width: 680px; /*shrink width to accomodate extra padding*/
+}
+
+/* IMAGE STYLES */
+
+#content img.left {
+	margin: 10px 20px 10px 10px;
+	float: left;
+}
+
+#content img.right {
+	margin: 10px 10px 10px 20px;
+	float: right;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content img.border {
+	background: #333;
+	padding: 5px;
+}
+
+/* FOOTER */
+
+#footer {
+	font-size: 12px;
+	width: 700px;
+	margin-left: 75px; /* so aligned with #content */
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+}
