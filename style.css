@@ -163,7 +163,8 @@ h2 {
 	padding: 10px 15px;
 }
 
-#content ul {
+#content ul ,
+#content ol {
 	padding: 10px;
 	padding-top: 5px;
 }
